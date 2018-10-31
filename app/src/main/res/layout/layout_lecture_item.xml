@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_lecture"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/horizontal_main_margin">
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/textView_lecnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/_14sdp"
+        android:text="1"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="0.9"-->
+        <!--android:orientation="vertical">-->
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:id="@+id/textView_title"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_14sdp"
+            android:text="Introduction to Databases"/>
+
+        <!--<com.example.bhoomi.lms.Student.Constants.MyRegularText-->
+            <!--android:id="@+id/textView_duration"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp"-->
+            <!--android:layout_weight="0.4"-->
+            <!--android:layout_gravity="top"-->
+            <!--android:text="Video-06:44 mins"-->
+            <!--/>-->
+    <!--</LinearLayout>-->
+</LinearLayout>

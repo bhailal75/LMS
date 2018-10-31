@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Intilagah</string>
+    <string name="sign_in_with_email">Sign in with Email</string>
+    <string name="or">or</string>
+
+    <string name="sign_in_with_facebook">Sign in with Facebook</string>
+    <string name="sign_in_with_gmail">Sign in with Gmail</string>
+    <string name="new_here_create_an_account">New here? Create an Account</string>
+    <string name="intelligah">Intilagah</string>
+    <string name="new_here">New here?</string>
+    <string name="create_acc">Create an Account</string>
+    <string name="accept_t_n_c"><![CDATA[Accept Terms and condition*]]></string>
+    <string name="forogt_password">Forgot Password?</string>
+    <string name="forogt_password_without_question">Forgot Password</string>
+    <string name="login">LOGIN</string>
+    <string name="sign_up_tip">New user? Sign up here</string>
+    <string name="already_have_an_acc">Already have an account ?</string>
+    <string name="plz_login_here">please login here</string>
+
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="signIn">Sign in</string>
+    <string name="new_user">New User? </string>
+    <string name="signup_here">Sign up here</string>
+    <string name="signup">Signup</string>
+    <string name="user">Name</string>
+    <string name="signin_tips">Already have an account? Please Login</string>
+
+    <string name="buy_now">Buy now</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="topCourse">Top Courses in</string>
+    <string name="sort_by">Sort By</string>
+    <string name="paid">Paid</string>
+    <string name="free">Free</string>
+    <string name="price">Price</string>
+    <string name="level">Level</string>
+    <string name="all_lvl">All Levels</string>
+    <string name="beginner">Beginner</string>
+    <string name="expert">Expert</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="fetures">Featured</string>
+    <string name="join_live_class">Join Live Class</string>
+    <string name="celebrity">Celebrity</string>
+    <string name="setting">Settings</string>
+    <string name="captions">Captions</string>
+    <string name="quizzes">Quizzes</string>
+    <string name="reset">Reset</string>
+    <string name="apply_filters">Apply Filters</string>
+    <string name="course_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</string>
+    <string name="card_num">Card Number</string>
+    <string name="CVV">CVV</string>
+    <string name="ex.date">Ex.Date</string>
+    <string name="fullname">Full Name</string>
+    <string name="streetAdd">Street Address</string>
+    <string name="apt">Apt./Suite</string>
+    <string name="city">City</string>
+    <string name="pincode">Pincode</string>
+    <string name="Save">Save</string>
+    <string name="update">Update</string>
+
+    <string name="chngPwd">Change Password</string>
+    <string name="new_pwd">Enter new password</string>
+    <string name="old_pwd">Enter old password</string>
+    <string name="re_type_new_passwod">Re-type New Password</string>
+
+    <string name="qtitle">Enter Question Title</string>
+    <string name="postq">Post Question</string>
+    <string name="qdetail">Enter question details</string>
+    <string name="enter_email">Enter email address</string>
+    <string name="invalid_email">Invalid email address</string>
+    <string name="enter_password">Enter password</string>
+    <string name="password_length">Password length should be minimum 6</string>
+    <string name="please_wait">Please wait</string>
+
+    <string name="active">Active</string>
+
+
+    <string name="facebook_app_id">1234808833315836</string>
+    <string name="fb_loginprotocol">fb1234808833315836</string>
+
+    <string name="job">Job title</string>
+    <string name="work">Work Email</string>
+    <string name="company">Company name</string>
+    <string name="phone">Phone</string>
+    <string name="need">What are your training needs?</string>
+    <string name="course_title_and_introduction">Course Title and Introduction</string>
+    <string name="coures_title">Course Title</string>
+    <string name="course_intro">Course Introduction</string>
+    <string name="description_and_requirement">Description and Requirement</string>
+    <string name="desc">Course Description</string>
+    <string name="course_requirement">Course Requirement</string>
+    <string name="continue_">Continue</string>
+    <string name="line1">Enter Course Line1</string>
+    <string name="line2">Enter Course Line2</string>
+    <string name="create">Create</string>
+    <string name="sec_name">Section Name</string>
+    <string name="title">Title</string>
+    <string name="quiz_title">Quiz Title</string>
+    <string name="syllabus">Syllabus</string>
+    <string name="passing_score">Passing Score</string>
+    <string name="total_que">Total Questions(number)</string>
+    <string name="retake">Retake allowed(number)</string>
+    <string name="result">Student can see the result</string>
+    <string name="anskey">Student can see ans key</string>
+    <string name="Public">public</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="address">Address</string>
+    <string name="sec_title">Section Title</string>
+    <string name="msg">Message</string>
+    <string name="send">Send</string>
+
+    <string name="browse">Browse</string>
+    <string name="select_category">Select Category</string>
+    <string name="subcat_name">Enter Sub-category Name</string>
+    <string name="createdby">Created By</string>
+    <string name="create_cat">Category Name</string>
+    <string name="tutore_dashboard">Tutore Dashboard</string>
+    <string name="view_course">View Course</string>
+    <string name="view_categories">View Categories</string>
+    <string name="view_quiz">View Quiz</string>
+    <string name="discount">Discount</string>
+    <string name="my_course">My Course</string>
+    <string name="my_courses">My Courses</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="quiz">Quiz</string>
+    <string name="live_classes">Live Classes</string>
+    <string name="student_can_see_the_result">Student can see the result</string>
+    <string name="student_can_see_answer_key">Student can see answer key</string>
+    <string name="public_">public</string>
+    <string name="select_sub_category_status">Select Sub-Category satus</string>
+    <string name="enter_valid_email">Enter valid email address</string>
+    <string name="enter_message">Enter message</string>
+    <string name="introductory">Introductory</string>
+    <string name="intermediate">Intermediate</string>
+    <string name="advanced">Advanced</string>
+    <string name="enter_price">Enter price</string>
+    <string name="enter_discount">Enter Discount</string>
+    <string name="select_image">Select image</string>
+    <string name="select_level">Select level</string>
+    <string name="camera">Camera</string>
+    <string name="gallery">Gallery</string>
+    <string name="camera_picture_was_not_taken">Camera Picture was not taken</string>
+    <string name="picture_was_not_taken">Picture wasn\'t taken!</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="puublic">Public</string>
+    <string name="select_public">Select public</string>
+    <string name="enter_retake_allowed">Enter retake allowed</string>
+    <string name="enter_total_question">Enter Total question</string>
+    <string name="enter_passing_score">Enter Passing Score</string>
+    <string name="select_time">Select Time</string>
+    <string name="upload_only_own_category">Update only own Category</string>
+    <string name="select_curriculum_content">Select Curriculum Content</string>
+    <string name="select_curriculum_section">Select Curriculum Section</string>
+    <string name="Enter_title">Enter title</string>
+    <string name="select_media_file">Select Media File</string>
+    <string name="select_video">Select Video</string>
+    <string name="select_type">Select Type</string>
+    <string name="create_quiz">Create Quiz</string>
+    <string name="view_result">View Results</string>
+    <string name="view_caegory">View Categories</string>
+    <string name="view_sub_category">View Sub-Categories</string>
+    <string name="create_sub_category">Create Sub-Category</string>
+    <string name="contact_admin">Contact Admin</string>
+    <string name="sign_out">Sign out</string>
+    <string name="categories">Categories</string>
+    <string name="quiz_control">Quiz Control</string>
+    <string name="course_control">Course Control</string>
+    <string name="create_course">Create Course</string>
+    <string name="view_sub_categories">View Sub-categories</string>
+    <string name="create_sub_categories">Create Sub-categories</string>
+    <string name="enter_course_title">Enter Course Title</string>
+    <string name="enter_course_interoduction">Enter Course Introduction</string>
+    <string name="enter_course_description">Enter Course Description</string>
+    <string name="enter_course_requirement">Enter Course Requirement</string>
+    <string name="check_internet_connection">Check your network connection</string>
+    <string name="select_sub_category">Select Sub-Category</string>
+    <string name="select_subcategory">Select category</string>
+    <string name="select_course">Select Course</string>
+    <string name="enter_syllabus">Enter Syllabus</string>
+    <string name="drop_some_image">drop Some Image</string>
+    <string name="deactive">Deactive</string>
+    <string name="delete_only_own_data">You can delete only own sub-category</string>
+    <string name="update_only_own_data">Update Only own Sub-Category</string>
+    <string name="enter_sub_category">Enter sub category</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="select_user_role">Select User Role</string>
+    <string name="enter_user_name">Enter user name</string>
+    <string name="auth_went_wrong">Auth went wrong</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_email_address">Enter email address</string>
+    <string name="enter_valid_phone">Enter valid phone number</string>
+    <string name="select_profile_image">Select profile image</string>
+    <string name="enter_address">Enter address</string>
+    ////
+    <string name="new_pwd_retype_pwd_not_match">New password and re-type password not match</string>
+
+    <string name="welcome_to_dashbourd">Welcome to dashboard</string>
+    <string name="new_participants">New Participants</string>
+    <string name="total_courses">Total Courses</string>
+    <string name="total_quiz">Total Quiz</string>
+    <string name="live_class">Live Class</string>
+
+    <string name="what_will_i_learn">What will i learn ?</string>
+    <string name="feature_image">Feature Image</string>
+    <string name="enter_zero_for_free_course">Enter 0 For Free Course</string>
+    <string name="enter_zero_for_no_discount">Enter 0 for no discount</string>
+    <string name="enter_zero_for_free">Enter 0 for free</string>
+    <string name="cancel">Cancel</string>
+
+    <string name="curriculum">Curriculum</string>
+    <string name="section_list">Section List</string>
+
+    <string name="no_section_found">No Section Found</string>
+    <string name="quiz_title_and_cantrol">Quiz Title and Category</string>
+    <string name="course_and_syllabus">Course and Syllabus</string>
+    <string name="quiz_image">Quiz Image</string>
+    <string name="enter_quiz_title">Enter Quiz Title</string>
+    <string name="time_duration_and_price">Time Duration and Price</string>
+    <string name="time_duration">Time Duration</string>
+    <string name="category_list">Category List</string>
+    <string name="sub_category_list">Sub-Category List</string>
+    <string name="contact_to_admin">Contact to Admin</string>
+    <string name="subscriber">Subscribe</string>
+    <string name="hhmmss">hh:mm:ss</string>
+    <string name="create_category">Create Category</string>
+    <string name="my_profile">My Profile</string>
+    <string name="change">Change</string>
+    <string name="update_category">Update Category</string>
+    <string name="add_section">Add Section</string>
+    <string name="update_section">Update Section</string>
+    <string name="add_content">Add content</string>
+    <string name="curriculum_content">Curriculum Content</string>
+    <string name="add_media_type_file_video">Add Media (Type : File , Video)</string>
+    <string name="update_sub_categoryy">Update Sub-Categoryy</string>
+    <string name="see_all">See all</string>
+    <string name="top_course_in">Top Courses in </string>
+    <string name="complete">Complete</string>
+    <string name="incomplete">Incomplete</string>
+    <string name="your_courses">Your courses</string>
+    <string name="will_be_kept_here">will be kept here</string>
+    <string name="what_will_you_learn_first">What will you learn first?</string>
+    <string name="courses">Courses </string>
+
+    <string name="settings">Settings</string>
+    <string name="lecture_playback">Lecture playback</string>
+    <string name="continue_lecture_in_background">Continue lecture in background</string>
+    <string name="notification_setting">Notification Setting</string>
+    <string name="edit_notification_preferences">Edit Notification Preferences</string>
+    <string name="as_a_student_i_want_to_receive">As a student, I want to receive</string>
+    <string name="as_a_teacher_i_want_to_receive">As a teacher, I want to receive</string>
+    <string name="popular">Popular</string>
+
+    <string name="this_course_includes">This course includes</string>
+    <string name="description">Description</string>
+    <string name="lecture">Lectures</string>
+    <string name="total">Total</string>
+    <string name="hours">Hours</string>
+    <string name="see_all_review">See all Reviews</string>
+    <string name="average_rating">Average Rating</string>
+    <string name="more_section">More Sections</string>
+    <string name="sections">Sections</string>
+    <string name="student_feedback">Student Feedback</string>
+    <string name="students_also_viewed">Students Also Viewed</string>
+    <string name="enroll">Enroll</string>
+    <string name="subcategories">Subcategories</string>
+    <string name="start_quiz">Start Quiz</string>
+    <string name="open_document">Open Document</string>
+
+    <string name="mark_as_complete">Mark as Complete</string>
+    <string name="mark_as_incomplete">Mark as InComplete</string>
+
+    <string name="select_tier">Select Tier</string>
+
+    <string name="total_student">Total Students</string>
+    <string name="reviews">Reviews</string>
+    <string name="connect">Connect</string>
+    <string name="schedule_a_live_class">Schedule a Live Class</string>
+    <string name="class_title_and_keywords">Class Title and Keywords</string>
+    <string name="keywords">Keywords</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="timezone_and_price">TimeZone and Price</string>
+    <string name="timezone">TimeZone</string>
+
+    <string name="local_time">Central Time (US and Canada)</string>
+    <string name="Kuwait_time">Kuwait, Riyadh</string>
+
+    <string name="username">Username</string>
+
+    <string-array name="category">
+        <item>All Courses</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Movies</item>
+    </string-array>
+
+    <string-array name="user_role_">
+        <item>Select User Role</item>
+        <item>Teacher</item>
+        <item>Student</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>Ratings</item>
+        <item>Newest</item>
+        <item>Price Low to High</item>
+        <item>Price High to Low</item>
+    </string-array>
+
+    <array name="rainbow">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorgPurple</item>
+        <item>@color/colorgGoogle</item>
+        <item>@color/colorFb</item>
+    </array>
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Student.Activty.EnrollVideo_Activity">
+
+    <RelativeLayout
+        android:id="@+id/content_relative"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.pierfrancescosoffritti.androidyoutubeplayer.player.YouTubePlayerView
+            android:id="@+id/youtube_player_view"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <tcking.github.com.giraffeplayer2.VideoView
+            android:id="@+id/video_view"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/frame_layout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/profile_icon"
+
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorgAlpha"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/sectionName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/vertical_main_margin"
+                    android:gravity="center_horizontal|bottom"
+                    android:text="Lecture 1"
+                    android:textColor="@android:color/white" />
+
+                <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                    android:id="@+id/sectionTitle"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:ellipsize="end"
+                    android:gravity="center_horizontal"
+                    android:maxLines="1"
+                    android:text="Inroduction to Databases"
+                    android:textColor="@android:color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.3" />
+
+                    <Button
+                        android:id="@+id/buttn_continuecard"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.4"
+                        android:background="@drawable/rounded_blue_button"
+                        android:text="continue"
+                        android:textColor="@android:color/white" />
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.3" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <ImageView
+            android:visibility="gone"
+            android:src="@drawable/ic_more_options"
+            android:id="@+id/image_option_complete_course"
+            android:layout_alignParentEnd="true"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/frame_layout"
+            android:orientation="vertical">
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/courseName"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/horizontal_main_margin"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="The Coding Interview Bootcamp : Algorithms + Data Structures"
+                android:textColor="@android:color/black" />
+
+            <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                android:id="@+id/text_createdBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/horizontal_main_margin"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="createdBy" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    app:tabGravity="fill"
+                    app:tabMode="fixed" />
+
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

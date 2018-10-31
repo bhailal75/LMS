@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@android:color/white"
+    android:layout_height="match_parent">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Student.Activty.AboutCourse_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_abtcourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"
+        >
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About the Course"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/vertical_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorPrimary"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="The Coding Interview Bootcamps : + Algorithms + Data Structures"/>
+
+    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/vertical_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Instructor"
+        android:gravity="center"
+        android:layout_margin="@dimen/vertical_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginRight="@dimen/vertical_main_margin"
+        android:layout_marginLeft="@dimen/vertical_main_margin"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <com.example.bhoomi.lms.Student.Constants.CircularImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.12"
+            app:border_color="@color/colorgPurple"
+            app:border_width=".5dp"
+            android:scaleType="fitXY"
+            android:layout_gravity="center"
+            android:src="@drawable/profile_icon"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_weight="0.05"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.83"
+                android:orientation="vertical">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John Smith"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="John Smith"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+            </LinearLayout>
+
+
+    </LinearLayout>
+
+    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/vertical_main_margin"
+        android:layout_marginLeft="@dimen/vertical_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."/>
+
+
+</LinearLayout>
+
+</ScrollView>

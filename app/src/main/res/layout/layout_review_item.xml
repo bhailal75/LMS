@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/horizontal_main_margin">
+
+    <RatingBar
+        android:id="@+id/ratingbar_course"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stepSize="0.5"
+        android:numStars="5"
+        android:rating="4.5"
+        android:layout_gravity="start"
+        android:theme="@style/RatingBar"
+        style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_marginTop="@dimen/horizontal_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/textView_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:text="Very useful.Thank you"
+      />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <com.example.bhoomi.lms.Student.Constants.MyRegularText
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:id="@+id/textView_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="100%"
+
+            android:textColor="@android:color/black"
+            android:layout_gravity="center"/>
+
+        <com.example.bhoomi.lms.Student.Constants.MyRegularText
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:layout_marginStart="@dimen/horizontal_main_margin"
+            android:layout_marginEnd="@dimen/horizontal_main_margin"
+            android:id="@+id/textView_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="100%"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

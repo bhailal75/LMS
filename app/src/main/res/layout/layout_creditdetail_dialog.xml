@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView   xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/vertical_main_margin">
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Credit or Debit Card"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.08"
+            android:src="@drawable/visa"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.03"/>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_user"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            style="@style/TextAppearance.AppCompat.Small">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/user_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/card_num"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:weightSum="1"
+       >
+
+
+        <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.5"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.12"
+                android:src="@drawable/calendar"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.03"/>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_exdate"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.85"
+
+              >
+
+                <EditText
+                    android:id="@+id/date_textInputEditText"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/ex.date"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:editable="false"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="0.12"
+                android:src="@drawable/cvv"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.03"/>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_cvv"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="0.85"
+             >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/cvv_textInputEditText"
+                    style="@style/TextAppearance.AppCompat.Small"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/CVV"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@android:color/black" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_fullname"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/fullname_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/fullname"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+     <Spinner
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinner_country"
+        />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_streetAdd"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/streetAdd_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/streetAdd"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_apt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/apt_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/apt"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_city"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/city_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/city"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_pincode"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/pincode_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/pincode"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:id="@+id/spinner_state"
+            />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/buttn_savecard"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Save"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_puple_button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_liveclass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgview_my_liveclass"
+            android:layout_width="@dimen/_110sdp"
+            android:layout_height="@dimen/_110sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textSize="@dimen/_12sdp"
+                android:textColor="@color/black_85"
+                android:id="@+id/text_liveclass_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:gravity="center"
+                android:text="Quiz " />
+
+            <TextView
+                android:textSize="@dimen/_10sdp"
+                android:id="@+id/text_liveclass_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_toRightOf="@+id/text_liveclass_name"
+                android:gravity="center"
+                android:text="Quiz " />
+
+            <TextView
+                android:id="@+id/text_liveclass_tutor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/text_liveclass_name"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="Quiz" />
+
+
+            <RelativeLayout
+                android:id="@+id/rl_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_below="@+id/text_liveclass_tutor_name">
+
+                <ImageView
+                    android:src="@drawable/mycalender"
+                    android:layout_centerVertical="true"
+                    android:id="@+id/imgdate"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp" />
+
+                <TextView
+                    android:textSize="@dimen/_8sdp"
+                    android:id="@+id/text_liveclass_datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imgdate"
+                    android:text="Quiz" />
+
+                <TextView
+                    android:textSize="@dimen/_8sdp"
+                    android:id="@+id/text_liveclass_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_liveclass_datetime"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toRightOf="@+id/imgdate"
+                    android:text="Quiz" />
+                <TextView
+                    android:textSize="@dimen/_10sdp"
+                    android:id="@+id/text_liveclass_difference_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_85"
+                    android:layout_below="@+id/text_liveclass_datetime"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:layout_toRightOf="@+id/text_liveclass_end_time"
+                    android:text="(0 Minute)" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_timezone"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_date">
+
+                <ImageView
+                    android:src="@drawable/timezone"
+                    android:id="@+id/imgtimezone"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/t_zone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imgtimezone"
+                    android:text="Time Zone: "
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black_85" />
+
+                <TextView
+                    android:id="@+id/text_liveclass_timezon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/t_zone"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="india" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_keyword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_timezone"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp">
+
+                <ImageView
+                    android:src="@drawable/keyword"
+                    android:id="@+id/imgkeyword"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/t_keyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imgkeyword"
+                    android:text="Keyword: "
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black_85" />
+
+                <TextView
+                    android:id="@+id/text_liveclass_keyword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/t_keyword"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="test" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_keyword">
+
+                <ImageView
+                    android:src="@drawable/prices"
+                    android:id="@+id/imgprice"
+                    android:layout_width="@dimen/_12sdp"
+                    android:layout_height="@dimen/_12sdp" />
+
+                <TextView
+                    android:id="@+id/t_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/imgprice"
+                    android:text="Price: "
+                    android:textSize="@dimen/_10sdp"
+                    android:textColor="@color/black_85" />
+
+                <TextView
+                    android:id="@+id/text_liveclass_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_2sdp"
+                    android:layout_toRightOf="@+id/t_price"
+                    android:textSize="@dimen/_10sdp"
+                    android:text="0" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black_55" />
+</LinearLayout>

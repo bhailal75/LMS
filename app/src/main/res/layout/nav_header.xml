@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark"
+    android:background="@android:color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.1"
+            android:layout_gravity="center"
+            />
+
+    <com.example.bhoomi.lms.Student.Constants.CircularImageView
+        android:id="@+id/profile_image"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:scaleType="centerCrop"
+        app:border_color="@android:color/white"
+        app:border_width="0.5dp"
+        android:layout_gravity="center"
+        android:src="@drawable/profile_icon"
+        />
+
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/txtUsername"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.2"
+        android:gravity="top|center"
+        android:text="Alex"
+        android:textColor="@android:color/white" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_weight="0.05"
+            />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_weight="0.005"
+        android:layout_gravity="center"
+        android:background="@android:color/white" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

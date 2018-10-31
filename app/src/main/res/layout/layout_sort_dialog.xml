@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/colorgPurple"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/textView_numOfCourse"
+                android:layout_margin="@dimen/horizontal_main_margin"
+                android:text="@string/courses"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:textColor="@android:color/white"/>
+
+
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_margin="@dimen/vertical_main_margin">
+
+                <TextView
+                    android:id="@+id/textView_sortby"
+                    android:text="@string/sort_by"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@android:color/black"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="@dimen/horizontal_main_margin"
+                    android:background="@drawable/spinner_border"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/simple_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:background="@android:color/transparent"
+                        android:gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:spinnerMode="dropdown" />
+
+                    <ImageView
+                        android:layoutDirection="rtl"
+                        android:rotation="180"
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:layout_marginRight="@dimen/_10sdp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android:src="@drawable/up_gry" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/vertical_main_margin"
+        android:layout_marginRight="@dimen/vertical_main_margin"
+       >
+
+        <TextView
+            android:id="@+id/textView_price"
+            android:text="@string/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"/>
+
+        <RadioGroup
+            android:id="@+id/radio_grp_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RadioButton
+                android:id="@+id/radio_price_free"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/free"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+
+            <RadioButton
+                android:id="@+id/radio_price_paid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/paid"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/semi_margin"
+        android:layout_marginLeft="@dimen/vertical_main_margin"
+        android:layout_marginRight="@dimen/vertical_main_margin">
+
+        <TextView
+            android:id="@+id/textView_level"
+            android:text="@string/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"/>
+
+        <RadioGroup
+            android:id="@+id/radio_grp_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+           >
+
+            <RadioButton
+                android:id="@+id/radio_level_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/all_lvl"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+            <RadioButton
+                android:id="@+id/radio_level_beginner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/beginner"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+            <RadioButton
+                android:id="@+id/radio_level_expert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/expert"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/semi_margin"
+        android:layout_marginLeft="@dimen/vertical_main_margin"
+        android:layout_marginRight="@dimen/vertical_main_margin">
+
+        <TextView
+            android:id="@+id/textView_features"
+            android:text="@string/fetures"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"/>
+
+        <RadioGroup
+            android:id="@+id/radio_grp_features"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_feature_caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/captions"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+            <RadioButton
+                android:id="@+id/radio_features_quiz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quizzes"
+                android:textColor="@android:color/darker_gray"
+                android:layout_margin="@dimen/semi_margin"/>
+
+
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+                <View
+                    android:layout_marginTop="@dimen/vertical_main_margin"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@android:color/darker_gray"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:gravity="center"
+                    android:layout_marginLeft="@dimen/vertical_main_margin"
+                    android:layout_marginRight="@dimen/vertical_main_margin"
+                    android:layout_gravity="center">
+
+                    <Button
+                        android:id="@+id/button_Reset"
+                        android:background="@android:color/transparent"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/reset"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorPrimary"
+                        style="@style/TextAppearance.AppCompat.Medium"/>
+
+                    <Button
+                        android:id="@+id/button_applyFilter"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/colorPrimary"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5"
+                        android:text="@string/apply_filters"
+                        android:gravity="center_vertical|right"
+                        style="@style/TextAppearance.AppCompat.Medium"/>
+
+                </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
+</LinearLayout>

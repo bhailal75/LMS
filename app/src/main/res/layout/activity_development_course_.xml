@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/toolbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_dev_course"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:autoMirrored="false"
+            android:background="@color/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/toolbar_title"
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@android:color/white" />
+
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.claudiodegio.msv.MaterialSearchView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dip">
+
+
+        </com.claudiodegio.msv.MaterialSearchView>
+    </FrameLayout>
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ll_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar_container"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/toolbar_dropshadow" />
+
+        </FrameLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/textview_popularCourse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/popular" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_marginLeft="@dimen/_4sdp"
+                            android:layout_toRightOf="@+id/textview_popularCourse"
+                            android:layout_width="wrap_content"
+                            android:layout_height="40dp"
+                            android:textColor="@color/colorPrimary"
+                            android:text="@string/courses" />
+                    </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_dev"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_40sdp">
+                    <TextView
+                        android:gravity="center"
+                        android:id="@+id/textview_browseCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:text="@string/browse"/>
+                    <TextView
+                        android:gravity="center"
+                        android:layout_marginLeft="@dimen/_4sdp"
+                        android:layout_toRightOf="@+id/textview_browseCategory"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:textColor="@color/colorgPurple"
+                        android:text="@string/subcategories" />
+                </LinearLayout>
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_container" />
+
+    <TextView
+        android:id="@+id/no_data_found"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/no_data_found"
+        android:textColor="@color/black_85"
+        android:textSize="@dimen/_18sdp"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

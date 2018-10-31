@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".Teacher.Activity.ContactAdmin_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_to_admin"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar_contact"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:layout_margin="@dimen/vertical_main_margin">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal"
+            android:weightSum="1"
+           >
+
+            <ImageView
+                android:id="@+id/user_imgVw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:src="@mipmap/user_dark" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.03" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_user"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/user_textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/user"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="0.12"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/email_imgVw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="0.07"
+                android:src="@mipmap/envelope_dark" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.03" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/email_textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColor="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/msg_imgVw"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="top"
+                android:layout_weight="0.07"
+                android:src="@drawable/msg" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.03" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/textInput_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9"
+                android:gravity="bottom"
+                >
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/msg_textInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/msg"
+                    android:inputType="text"
+                    android:maxLines="4"
+                    android:gravity="top"
+                    android:textColor="@color/colorPrimary" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/horizontal_main_margin"
+            android:weightSum="1">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.2"/>
+
+            <Button
+                android:id="@+id/buttn_postq"
+                android:layout_width="0dp"
+                android:layout_weight="0.6"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/send"
+                android:textColor="@android:color/white"
+                android:background="@drawable/rounded_blue_button"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="0.2"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.36"/>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

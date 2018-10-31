@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llStudentCourse"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imgview_student_cource"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_100sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_toRightOf="@+id/imgview_student_cource"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/txtCourseTitle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Course title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/txtCourseCreatedBy"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Created By"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/txtCourseComplete"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:textSize="@dimen/_12sdp"
+        android:text="Created By"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+    <View
+        android:layout_below="@+id/imgview_student_cource"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:background="@color/black_55"></View>
+</RelativeLayout>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/whitePrimary"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_celebrity_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp">
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/celebrity"
+            android:textColor="@android:color/white" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/temp_ll"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_below="@+id/toolbar_celebrity_fragment"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <com.example.bhoomi.lms.Student.Constants.CircularImageView
+        android:id="@+id/image_celebrity_fragment"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_icon"
+        app:border_color="@android:color/white"
+        app:border_width="0.5dp" />
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp">
+
+            <LinearLayout
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/total_student"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/txt_total_student"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:background="@color/black_35"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/courses"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/txt_courses"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <View
+                android:background="@color/black_35"
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"/>
+
+
+            <LinearLayout
+                android:layout_marginStart="@dimen/_7sdp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:text="@string/reviews"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:textSize="@dimen/_20sdp"
+                    android:id="@+id/txt_review"
+                    android:text=""
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_margin="@dimen/_12sdp"
+        android:layout_below="@+id/temp_ll"
+        android:layout_above="@+id/btn_connect"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:textSize="@dimen/_13sdp"
+        android:id="@+id/txt_celebrity_description"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:layout_below="@+id/temp_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    </android.support.v4.widget.NestedScrollView>
+
+    <TextView
+        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginStart="@dimen/_55sdp"
+        android:layout_marginEnd="@dimen/_55sdp"
+        android:gravity="center"
+        android:textSize="@dimen/_20sdp"
+        android:text="@string/connect"
+        android:id="@+id/btn_connect"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/rounded_green_button"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>

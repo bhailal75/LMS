@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/action_privacyPlicy"
+        android:title="View Privacy Policy"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_tnc"
+        android:title="View Terms of Use"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_intellicual_privacyPlicy"
+        android:title="View Intellectual Property Policy"
+        app:showAsAction="never" />
+</menu>

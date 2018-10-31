@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Video Download quality"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:textColor="@android:color/black"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <RadioGroup
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="360p"
+            android:buttonTint="@android:color/darker_gray"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="480p"
+            android:buttonTint="@android:color/darker_gray"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="480p"
+            android:buttonTint="@android:color/darker_gray"/>
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="1080p"
+            android:buttonTint="@android:color/darker_gray"/>
+
+    </RadioGroup>
+
+</LinearLayout>

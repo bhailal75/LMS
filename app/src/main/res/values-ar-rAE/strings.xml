@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<string name="app_name">LMS</string>-->
+    <!--<string name="sign_in_with_email">Sign in with Email</string>-->
+    <!--<string name="or">or</string>-->
+    <!--<string name="sign_in_with_facebook">Sign in with Facebook</string>-->
+    <!--<string name="sign_in_with_gmail">Sign in with Gmail</string>-->
+    <!--<string name="new_here_create_an_account">New here? Create an Account</string>-->
+    <!--<string name="intelligah">Intilagah</string>-->
+    <!--<string name="new_here">New here?</string>-->
+    <!--<string name="create_acc">Create an Account</string>-->
+    <!--<string name="accept_t_n_c"><![CDATA[Accept Terms & Condition*]]></string>-->
+    <!--<string name="forogt_password">Forgot Password?</string>-->
+    <!--<string name="login">تسجيل الدخول</string>-->
+    <!--<string name="sign_up_tip">New user? Sign up here</string>-->
+    <!--<string name="email">البريد الإلكتروني</string>-->
+    <!--<string name="password">Password</string>-->
+    <!--<string name="signIn">تسجيل الدخول</string>-->
+    <!--<string name="new_user">New User?</string>-->
+    <!--<string name="signup_here">Signup here</string>-->
+    <!--<string name="signup">Signup</string>-->
+    <!--<string name="user">Name</string>-->
+    <!--<string name="signin_tips">Already have an account? Please Login</string>-->
+    <!--<string name="buy_now">Buy now</string>-->
+    <!--<string name="drawer_open">open</string>-->
+    <!--<string name="drawer_close">close</string>-->
+    <!--<string name="topCourse">Top Courses in</string>-->
+    <!--<string name="sort_by">Sort By</string>-->
+    <!--<string name="paid">Paid</string>-->
+    <!--<string name="price">Price</string>-->
+    <!--<string name="level">Level</string>-->
+    <!--<string name="all_lvl">All Levels</string>-->
+    <!--<string name="beginner">Beginner</string>-->
+    <!--<string name="expert">Expert</string>-->
+    <!--<string name="fetures">Features</string>-->
+    <!--<string name="captions">Captions</string>-->
+    <!--<string name="quizzes">Quizzes</string>-->
+    <!--<string name="reset">Reset</string>-->
+    <!--<string name="apply_filters">Apply Filters</string>-->
+    <!--<string name="course_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</string>-->
+    <!--<string name="card_num">Card Number</string>-->
+    <!--<string name="CVV">CVV</string>-->
+    <!--<string name="ex.date">Ex.Date</string>-->
+    <!--<string name="fullname">Full Name</string>-->
+    <!--<string name="streetAdd">Street Address</string>-->
+    <!--<string name="apt">Apt./Suite</string>-->
+    <!--<string name="city">City</string>-->
+    <!--<string name="pincode">Pincode</string>-->
+    <!--<string name="Save">Save</string>-->
+    <!--<string name="update">Update</string>-->
+    <!--<string name="chngPwd">Change Password</string>-->
+    <!--<string name="new_pwd">Enter new password</string>-->
+    <!--<string name="old_pwd">Enter old password</string>-->
+    <!--<string name="qtitle">Enter Question Title</string>-->
+    <!--<string name="postq">Post Question</string>-->
+    <!--<string name="qdetail">Enter question details</string>-->
+    <!--<string name="enter_email">Enter email address</string>-->
+    <!--<string name="invalid_email">Invalid email address</string>-->
+    <!--<string name="enter_password">Enter password</string>-->
+    <!--<string name="password_length">Password length should be minimum 6</string>-->
+    <!--<string name="please_wait">Please wait</string>-->
+
+
+    <!--<string name="facebook_app_id">1234808833315836</string>-->
+    <!--<string name="fb_loginprotocol">fb1234808833315836</string>-->
+    <!--<string name="job">Job title</string>-->
+    <!--<string name="work">Work Email</string>-->
+    <!--<string name="company">Company name</string>-->
+    <!--<string name="phone">Phone</string>-->
+    <!--<string name="need">What are your training needs?</string>-->
+    <!--<string name="coures_title">Course Title</string>-->
+    <!--<string name="course_intro">Course Introduction</string>-->
+    <!--<string name="desc">Course Description</string>-->
+    <!--<string name="course_requirement">Course Requirement</string>-->
+    <!--<string name="continue_">Continue</string>-->
+    <!--<string name="line1">Add Course Line1</string>-->
+    <!--<string name="line2">Add Course Line2</string>-->
+    <!--<string name="create">Create</string>-->
+    <!--<string name="sec_name">Section Name</string>-->
+    <!--<string name="title">Title</string>-->
+    <!--<string name="quiz_title">Quiz Title</string>-->
+    <!--<string name="syllabus">Syllabus</string>-->
+    <!--<string name="passing_score">Passing Score</string>-->
+    <!--<string name="total_que">Total Questions(number)</string>-->
+    <!--<string name="retake">Retake allowed(number)</string>-->
+    <!--<string name="result">Student can see the result</string>-->
+    <!--<string name="anskey">Student can see ans key</string>-->
+    <!--<string name="Public">public</string>-->
+    <!--<string name="male">ذكر</string>-->
+    <!--<string name="female">انثى</string>-->
+    <!--<string name="address">Address</string>-->
+    <!--<string name="sec_title">Section Title</string>-->
+    <!--<string name="msg">Message</string>-->
+    <!--<string name="send">Send</string>-->
+    <!--<string name="free">Free</string>-->
+    <!--<string name="select_category">Select Category</string>-->
+    <!--<string name="subcat_name">Sub-category Name</string>-->
+    <!--<string name="createdby">Created By</string>-->
+    <!--<string name="create_cat">Category Name</string>-->
+    <!--<string name="tutore_dashboard">Tutore Dashboard</string>-->
+    <!--<string name="view_course">View Course</string>-->
+    <!--<string name="view_categories">View Categories</string>-->
+    <!--<string name="view_quiz">View Quiz</string>-->
+    <!--<string name="discount">Discount</string>-->
+    <!--<string name="my_course">My Course</string>-->
+    <!--<string name="no_data_found">No Data Found</string>-->
+    <!--<string name="quiz">Quiz</string>-->
+    <!--<string name="live_classes">Live Classes</string>-->
+    <!--<string name="re_type_new_passwod">Re-type New Passwod</string>-->
+    <!--<string name="student_can_see_the_result">Student can see the result</string>-->
+    <!--<string name="student_can_see_answer_key">Student can see answer key</string>-->
+    <!--<string name="public_">public</string>-->
+
+
+    <string-array name="category">
+        <item>All Courses</item>
+        <item>Business</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Movies</item>
+    </string-array>
+
+    <array name="rainbow">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorgPurple</item>
+        <item>@color/colorgGoogle</item>
+        <item>@color/colorFb</item>
+    </array>
+</resources>
+
+
+
+
+
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<resources>-->
+    <!--<string name="app_name">LMS</string>-->
+    <!--<string name="sign_in_with_email">تسجيل الدخول باستخدام البريد الإلكتروني</string>-->
+    <!--<string name="or">أو</string>-->
+    <!--<string name="sign_in_with_facebook">قم بتسجيل الدخول باستخدام الفيسبوك</string>-->
+    <!--<string name="sign_in_with_gmail">تسجيل الدخول باستخدام Gmail</string>-->
+    <!--<string name="new_here_create_an_account">جديد هنا؟ انشئ حساب</string>-->
+    <!--<string name="intelligah">Intilagah</string>-->
+    <!--<string name="new_here">جديد هنا؟</string>-->
+    <!--<string name="create_acc">انشئ حساب</string>-->
+    <!--<string name="accept_t_n_c"><![CDATA[Accept T & C*]]></string>-->
+    <!--<string name="forogt_password">Forgot Password?</string>-->
+    <!--<string name="login">LOGIN</string>-->
+    <!--<string name="sign_up_tip">New user? Sign up here</string>-->
+    <!--<string name="email">Email</string>-->
+    <!--<string name="signIn">Sign in</string>-->
+    <!--<string name="signup">Signup</string>-->
+    <!--<string name="user">User Name</string>-->
+    <!--<string name="signin_tips">Already have an account? Please Login</string>-->
+    <!--<string name="buy_now">Buy now</string>-->
+    <!--<string name="topCourse">Top Courses in</string>-->
+    <!--<string name="sort_by">Sort By</string>-->
+    <!--<string name="paid">Paid</string>-->
+    <!--<string name="price">Price</string>-->
+    <!--<string name="level">Level</string>-->
+    <!--<string name="all_lvl">All Levels</string>-->
+    <!--<string name="beginner">Beginner</string>-->
+    <!--<string name="expert">Expert</string>-->
+    <!--<string name="fetures">Features</string>-->
+    <!--<string name="captions">Captions</string>-->
+    <!--<string name="quizzes">Quizzes</string>-->
+    <!--<string name="apply_filters">Apply Filters</string>-->
+    <!--<string name="course_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</string>-->
+    <!--<string name="card_num">Card Number</string>-->
+    <!--<string name="CVV">CVV</string>-->
+    <!--<string name="ex.date">Ex.Date</string>-->
+    <!--<string name="fullname">Full Name</string>-->
+    <!--<string name="streetAdd">Street Address</string>-->
+    <!--<string name="apt">Apt./Suite</string>-->
+    <!--<string name="city">City</string>-->
+    <!--<string name="pincode">Pincode</string>-->
+    <!--<string name="Save">Save</string>-->
+    <!--<string name="update">Update</string>-->
+    <!--<string name="chngPwd">Change Password</string>-->
+    <!--<string name="new_pwd">Enter new password</string>-->
+    <!--<string name="old_pwd">Enter old password</string>-->
+    <!--<string name="qtitle">Enter Question Title</string>-->
+    <!--<string name="postq">Post Question</string>-->
+    <!--<string name="qdetail">Enter question details</string>-->
+    <!--<string name="enter_email">Enter email address</string>-->
+    <!--<string name="invalid_email">Invalid email address</string>-->
+    <!--<string name="enter_password">Enter password</string>-->
+    <!--<string name="password_length">Password length should be minimum 6</string>-->
+    <!--<string name="please_wait">Please wait</string>-->
+    <!--<string name="job">Job title</string>-->
+    <!--<string name="work">Work Email</string>-->
+    <!--<string name="company">Company name</string>-->
+    <!--<string name="phone">Phone</string>-->
+    <!--<string name="need">What are your training needs?</string>-->
+    <!--<string name="coures_title">Course Title</string>-->
+    <!--<string name="course_intro">Course Introduction</string>-->
+    <!--<string name="desc">Course Description</string>-->
+    <!--<string name="course_requirement">Course Requirement</string>-->
+    <!--<string name="continue_">Continue</string>-->
+    <!--<string name="line1">Add Line1</string>-->
+    <!--<string name="line2">Add Line2</string>-->
+    <!--<string name="create">Create</string>-->
+    <!--<string name="sec_name">Section Name</string>-->
+    <!--<string name="title">Title</string>-->
+    <!--<string name="quiz_title">Quiz Title</string>-->
+    <!--<string name="syllabus">Syllabus</string>-->
+    <!--<string name="passing_score">Passing Score</string>-->
+    <!--<string name="total_que">Total Questions(number)</string>-->
+    <!--<string name="retake">Retake allowed(number)</string>-->
+    <!--<string name="male">Male</string>-->
+    <!--<string name="female">Female</string>-->
+    <!--<string name="address">Address</string>-->
+    <!--<string name="sec_title">Section Title</string>-->
+    <!--<string name="msg">Message</string>-->
+    <!--<string name="send">Send</string>-->
+    <!--<string name="free">Free</string>-->
+    <!--<string name="browse">Browse</string>-->
+    <!--<string name="select_category">Select Category</string>-->
+    <!--<string name="subcat_name">Sub-category name</string>-->
+    <!--<string name="createdby">Created By</string>-->
+    <!--<string name="create_cat">Create Category</string>-->
+<!--</resources>-->

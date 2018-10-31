@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/vertical_main_margin">
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_margin="@dimen/vertical_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Payment Methods"
+        android:textColor="@android:color/black"
+        style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    <LinearLayout
+        android:id="@+id/ll_creditcard"
+        android:layout_margin="@dimen/vertical_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/credit_card"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.1"/>
+
+        <com.example.bhoomi.lms.Student.Constants.MyRegularText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Add Credit or Debit Card"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@android:color/darker_gray"/>
+
+    <LinearLayout
+        android:id="@+id/ll_netbanking"
+        android:layout_margin="@dimen/vertical_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.1"
+            android:src="@drawable/bank"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.1"/>
+
+        <com.example.bhoomi.lms.Student.Constants.MyRegularText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.8"
+            android:text="Add Netbanking"/>
+    </LinearLayout>
+
+</LinearLayout>

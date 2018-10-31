@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">انطلاقة</string>
+    <string name="sign_in_with_email">تسجيل الدخول باستخدام البريد الإلكتروني</string>
+    <string name="or">أو</string>
+
+    <string name="sign_in_with_facebook">قم بتسجيل الدخول باستخدام الفيسبوك</string>
+    <string name="sign_in_with_gmail">قم بتسجيل الدخول باستخدام جوجل</string> //sign in with gmail but here google
+    <string name="new_here_create_an_account">New here? Create an Account</string>
+    <string name="intelligah">انطلاقة</string>
+    <string name="new_here">جديد هنا ؟</string>
+    <string name="create_acc">انشئ حساب</string>  //create an account but here create new account
+    <string name="accept_t_n_c"><![CDATA[قبول الشروط والحالة]]></string>
+    <string name="forogt_password">هل نسيت كلمة المرور؟</string>
+    <string name="forogt_password_without_question">هل نسيت كلمة المرور</string>
+    <string name="login">تسجيل الدخول</string>
+    <string name="sign_up_tip">سجل هنا</string>
+
+    <string name="email">البريد الإلكتروني</string>
+    <string name="password">كلمه السر</string>
+    <string name="signIn">تسجيل الدخول</string> //here used Log in
+    <string name="new_user">مستخدم جديد ؟</string>
+    <string name="signup_here">سجل هنا</string>
+    <string name="signup">سجّل</string>
+    <string name="user">اسم</string>
+    <string name="signin_tips">هل لديك حساب ؟</string>
+    <string name="already_have_an_acc">هل لديك حساب ؟</string>
+    <string name="plz_login_here">يرجى تسجيل الدخول هنا</string>
+
+    <string name="buy_now">اشتري الآن</string>
+    <string name="drawer_open">open</string>
+    <string name="drawer_close">close</string>
+    <string name="topCourse">أعلى الدورات في التطوير</string>
+    <string name="sort_by">ترتيب حسب</string>
+    <string name="paid">مدفوع</string>
+    <string name="free">مجاني</string>
+    <string name="price">السعر</string>
+    <string name="level">مستوى</string>
+    <string name="all_lvl">كل المستويات</string>
+    <string name="beginner">مبتدئ</string>
+    <string name="expert">خبير</string>
+    <string name="fetures">مميز</string>
+    <string name="wishlist">قائمه الامنيات</string>
+    <string name="join_live_class">انضم إلى الفصل المباشر</string>
+    <string name="celebrity">المشاهير</string>
+    <string name="setting">إعدادات</string>
+    <string name="captions">تعليق</string>
+    <string name="quizzes">اختبارات</string>
+    <string name="reset">راحة</string>
+    <string name="apply_filters">تطبيق المرشحات</string>
+    <string name="course_desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem</string>
+    <string name="card_num">Card Number</string>
+    <string name="CVV">CVV</string>
+    <string name="ex.date">Ex.Date</string>
+    <string name="fullname">Full Name</string>
+    <string name="streetAdd">Street Address</string>
+    <string name="apt">Apt./Suite</string>
+    <string name="city">مدينة</string>
+    <string name="pincode">الرقم السري</string>
+    <string name="Save">حفظ</string>
+    <string name="update">تحديث</string>
+
+    <string name="chngPwd">تغيير كلمة السر</string>
+    <string name="new_pwd">أدخل كلمة مرور جديدة</string>
+    <string name="old_pwd">أدخل كلمة المرور القديمة</string>
+    <string name="re_type_new_passwod">أعد كتابة كلمة السر الجديدة</string>
+
+    <string name="qtitle">أدخل عنوان السؤال</string>
+    <string name="postq">اضف السؤال</string>
+    <string name="qdetail">أدخل تفاصيل السؤال</string>
+    <string name="enter_email">أدخل عنوان البريد الالكتروني</string>
+    <string name="invalid_email">عنوان البريد الإلكتروني غير صالح</string>
+    <string name="enter_password">أدخل كلمة المرور</string>
+    <string name="password_length">يجب أن يكون طول كلمة المرور 6 احرف  كحد أدنى</string>
+    <string name="please_wait">أرجو الإنتظار</string>
+
+    <string name="active">نشط</string>
+
+    <string name="facebook_app_id">1234808833315836</string>
+    <string name="fb_loginprotocol">fb1234808833315836</string>
+
+    <string name="job">Job title</string>
+    <string name="work">Work Email</string>
+    <string name="company">Company name</string>
+    <string name="phone">هاتف</string>
+    <string name="need">What are your training needs?</string>
+    <string name="course_title_and_introduction">عنوان الدورة والمقدمة</string>
+    <string name="coures_title">عنوان الدورة</string>
+    <string name="course_intro">مقدمة الدرس</string>
+    <string name="description_and_requirement">الوصف والمتطلبات</string>
+    <string name="desc">وصف المساقات</string>
+    <string name="course_requirement">متطلبات الدورة</string>
+    <string name="continue_">استمر</string>
+    <string name="line1">أضف مسار الدورة ١</string>
+    <string name="line2">أضف مسار الدورة</string>
+    <string name="create">تحرير</string>
+    <string name="sec_name">اسم القسم</string>
+    <string name="title">عنوان</string>
+    <string name="quiz_title">عنوان الإختبار</string>
+    <string name="syllabus">المنهج</string>
+    <string name="passing_score">درجة النجاح</string>
+    <string name="total_que">مجموع الأسئلة (العدد)</string>
+    <string name="retake">عدد المحاولات المسموح بها (الرقم)</string>
+    <string name="result">يمكن للطالب رؤية النتيجة</string>
+    <string name="anskey">يمكن للطالب رؤية مفتاح الإجابة</string>
+    <string name="Public">عامة</string>
+    <string name="male">ذكر</string>
+    <string name="female">انِثى</string>
+    <string name="address">عنوان</string>
+    <string name="sec_title">عنوان القسم</string>
+    <string name="msg">رسالة</string>
+    <string name="send">إرسال</string>
+
+    <string name="browse">تصفح</string>
+    <string name="select_category">اختر الفئة</string>
+    <string name="subcat_name">أدخل اسم الفئة الفرعية</string>
+    <string name="createdby">Created By</string>
+    <string name="create_cat">اسم التصنيف</string>
+    <string name="tutore_dashboard">لوحة معلومات المعلم</string>
+    <string name="view_course">عرض الدورات</string>
+    <string name="view_categories">عرض فئات</string>
+    <string name="view_quiz">عرض المسابقة</string>
+    <string name="discount">خصم</string>
+    <string name="my_course">دوراتي</string>
+    <string name="my_courses">دوراتي</string>
+    <string name="no_data_found">No Data Found</string>
+    <string name="quiz">اختبار</string>
+    <string name="live_classes">محاضرة مباشرة</string>
+    <string name="student_can_see_the_result">يمكن للطالب رؤية النتيجة</string>
+    <string name="student_can_see_answer_key">يمكن للطالب رؤية مفتاح الإجابة</string>
+    <string name="public_">عامة</string>
+    <string name="select_sub_category_status">Select Sub-Category status</string>
+    <string name="enter_valid_email">بريد إلكتروني خاطئ</string>
+    <string name="enter_message">أدخل رسالتك</string>
+    <string name="introductory">تمهيدي</string>
+    <string name="intermediate">متوسط</string>
+    <string name="advanced">متقدم</string>
+    <string name="enter_price">أدخل السعر</string>
+    <string name="enter_discount">خصم</string>
+    <string name="select_image">Select image</string>
+    <string name="select_level">اختر المستويات</string>
+    <string name="camera">افتح الكاميرا</string>  //open camera
+    <string name="gallery">افتح المعرض</string>   //open gallery
+    <string name="camera_picture_was_not_taken">Camera Picture was not taken</string>
+    <string name="picture_was_not_taken">Picture wasn\'t taken!</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="puublic">عامة</string>
+    <string name="select_public">اختر عام</string>
+    <string name="enter_retake_allowed">أدخل عدد مرات الاعادة المسموح بها</string>
+    <string name="enter_total_question">أدخل مجموع الأسئلة</string>
+    <string name="enter_passing_score">أدخل نتيجة النجاح</string>
+    <string name="select_time">حدد مدة الوقت</string>
+    <string name="upload_only_own_category">Update only own Category</string>
+    <string name="select_curriculum_content">محتوى المنهاج</string>
+    <string name="select_curriculum_section">اختر قسم المناهج</string>
+    <string name="Enter_title">عنوان</string>  //title
+    <string name="select_media_file">إضافة وسائط (النوع: ملف ، فيديو)</string>
+    <string name="select_video">Select Video</string>
+    <string name="select_type">Select Type</string>
+    <string name="live_class">محاضرة مباشرة</string>
+    <string name="create_quiz">إنشاء اختبار</string>
+    <string name="view_result">عرض النتائج</string>
+    <string name="view_caegory">عرض فئات</string>
+    <string name="view_sub_category">عرض الفئات الفرعية</string>
+    <string name="create_sub_category">إنشاء فئة فرعية</string>
+    <string name="contact_admin">اتصل بالمسؤول</string>
+    <string name="sign_out">الخروج</string>
+    <string name="categories">الاقسام</string>
+    <string name="quiz_control">التحكم في الاختبار</string>
+    <string name="course_control">التحكم في الدورة</string>
+    <string name="create_course">انشاء دورة</string>
+    <string name="view_sub_categories">عرض الفئات الفرعية</string>
+    <string name="create_sub_categories">إنشاء فئة فرعية</string>
+    <string name="enter_course_title">عنوان الدورة</string>
+    <string name="enter_course_interoduction">ادخل مقدمة الدورة</string>
+    <string name="enter_course_description">ادخل وصف الدورة التدريبية</string>
+    <string name="enter_course_requirement">أدخل متطلبات الدورة</string>
+    <string name="check_internet_connection">Check your network connection</string>
+    <string name="select_sub_category">اختر الفئة الفرعية</string>
+    <string name="select_subcategory">اختر الفئة</string>
+    <string name="select_course">اختر الدورة</string>
+    <string name="enter_syllabus">أدخل المنهج</string>
+    <string name="drop_some_image">drop Some Image</string>
+    <string name="deactive">غير نشط</string>
+    <string name="delete_only_own_data">You can delete only own sub-category</string>
+    <string name="update_only_own_data">Update Only own Sub-Category</string>
+    <string name="enter_sub_category">أدخل اسم الفئة الفرعية</string>
+    <string name="teacher">مدرس</string>
+    <string name="student">طالب</string>
+    <string name="select_user_role">حدد دور المستخدم</string>
+    <string name="enter_user_name">اسم المستخدم</string>
+    <string name="enter_email_address">أدخل بريدك الالكتروني</string>
+    <string name="auth_went_wrong">Auth went wrong</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_valid_phone">أدخل رقم الهاتف</string>   //enter phone number
+    <string name="select_profile_image">Select profile image</string>
+    <string name="enter_address">أدخل العنوان</string>
+    <string name="new_pwd_retype_pwd_not_match">New password and re-type password not match</string>
+
+    <string name="welcome_to_dashbourd">مرحبًا بك في لوحة المعلومات</string>
+    <string name="new_participants">مشاركين جدد</string>
+    <string name="total_courses">الدورة كاملة</string>
+    <string name="total_quiz">مجموع الاختبارات</string>
+
+    <string name="what_will_i_learn">ماذا سوف اتعلم؟</string>
+    <string name="feature_image">صورة مميزة</string>
+    <string name="enter_zero_for_free_course">أدخل 0 للحصول على دورة مجانية</string>
+    <string name="cancel">إلغاء</string>
+    <string name="enter_zero_for_no_discount">أدخل 0 بدون خصم</string>
+    <string name="enter_zero_for_free">أدخل 0 مجانا.</string>
+
+    <string name="curriculum">منهاج دراسي</string>
+    <string name="section_list">قائمة القسم</string>
+
+    <string name="no_section_found">No Section Found</string>
+    <string name="quiz_title_and_cantrol">عنوان الاختبار والفئة</string>
+    <string name="course_and_syllabus">بالطبع والمقرر</string>
+    <string name="quiz_image">اختبار الصور</string>
+    <string name="enter_quiz_title">أدخل عنوان الاختبار</string>
+    <string name="time_duration_and_price">المدة الزمنية والسعر</string>
+    <string name="time_duration">المدة الزمنية</string>
+    <string name="category_list">قائمة الفئات</string>
+    <string name="sub_category_list">قائمة الفئات الفرعية</string>
+    <string name="contact_to_admin">الاتصال إلى المسؤول</string>
+    <string name="subscriber">اشتراك</string>
+    <string name="hhmmss">ثانية: دقيقة: ساعة</string>
+    <string name="create_category">إنشاء فئة</string>
+    <string name="my_profile">ملفي</string>
+    <string name="change">غير</string>
+    <string name="update_category">تحديث الفئة</string>
+    <string name="add_section">إضافة أقسام</string>
+    <string name="update_section">Update Section</string>
+    <string name="add_content">إضافة محتوى</string>
+    <string name="curriculum_content">محتوى المنهاج</string>
+    <string name="add_media_type_file_video">إضافة وسائط (النوع: ملف ، فيديو)</string>
+    <string name="update_sub_categoryy">تحديث الفئة الفرعية</string>
+    <string name="see_all">اظهار الكل</string>
+    <string name="top_course_in">أعلى الدورات في </string>
+
+    <string name="your_courses">الدورات الخاصة بك</string>
+    <string name="will_be_kept_here">سيتم الاحتفاظ هنا</string>
+    <string name="what_will_you_learn_first">ماذا سوف تتعلم أولاً ؟</string>
+    <string name="courses">الدورات </string>
+
+    <string name="settings">إعدادات</string>
+    <string name="lecture_playback">تشغيل المحاضرة</string>
+    <string name="continue_lecture_in_background">مواصلة المحاضرة في الخلفية</string>
+    <string name="notification_setting">إعدادات الإشعار</string>
+    <string name="edit_notification_preferences">تحرير تفضيلات الإخطار</string>
+    <string name="as_a_student_i_want_to_receive">As a student, I want to receive</string>
+    <string name="as_a_teacher_i_want_to_receive">As a teacher, I want to receive</string>
+    <string name="popular">شائع</string>
+
+    <string name="this_course_includes">تشمل هذه الدورة</string>
+    <string name="description">الوصف</string>
+    <string name="lecture">محاضرات</string>
+    <string name="total">مجموع</string>
+    <string name="hours">الساعات</string>
+    <string name="see_all_review">مشاهدة المزيد من التقييمات</string>
+    <string name="average_rating">متوسط ​​التقييم</string>
+    <string name="more_section">المزيد من الأقسام</string>
+    <string name="sections">القسم </string>
+    <string name="student_feedback">ردود الطلاب</string>
+    <string name="students_also_viewed">الطلاب شاهدوا أيضا</string>
+    <string name="enroll">سجل</string>
+    <string name="subcategories">الفئات الفرعية</string>
+    <string name="start_quiz">بدء اختبار</string>
+    <string name="open_document">Open Document</string>
+
+    <string name="mark_as_complete">Mark as Complete</string>
+    <string name="mark_as_incomplete">Mark as InComplete</string>
+
+    <string name="select_tier">Select Tier</string>
+
+    <string name="total_student">Total Students</string>
+    <string name="reviews">Reviews</string>
+    <string name="connect">Connect</string>
+    <string name="schedule_a_live_class">Schedule a Live Class</string>
+    <string name="class_title_and_keywords">Class Title and Keywords</string>
+    <string name="keywords">Keywords</string>
+    <string name="date_and_time">Date and Time</string>
+    <string name="date">Date</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="timezone_and_price">TimeZone and Price</string>
+    <string name="timezone">TimeZone</string>
+
+    <string name="local_time">Central Time (US and Canada)</string>
+    <string name="Kuwait_time">Kuwait, Riyadh</string>
+
+    <string name="username">اسم المستخدم</string>
+
+
+    <string-array name="category">
+        <item>جميع الدورات</item>
+        <item>اعمال</item>
+        <item>Politics</item>
+        <item>Sports</item>
+        <item>Technology</item>
+        <item>Movies</item>
+    </string-array>
+
+    <string-array name="user_role_">
+        <item>حدد دور المستخدم</item>
+        <item>مدرس</item>
+        <item>طالب</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>تصنيفات</item>
+        <item>الأحدث</item>
+        <item>السعر من الارخص للاعلى</item>
+        <item>السعر الاعلى الى الادنى</item>
+    </string-array>
+
+    <array name="rainbow">
+        <item>@color/colorPrimary</item>
+        <item>@color/colorPrimaryDark</item>
+        <item>@color/colorAccent</item>
+        <item>@color/colorgPurple</item>
+        <item>@color/colorgGoogle</item>
+        <item>@color/colorFb</item>
+    </array>
+</resources>

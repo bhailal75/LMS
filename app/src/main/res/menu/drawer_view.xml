@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/featured"
+        android:icon="@mipmap/ic_star"
+        android:title="@string/fetures"/>
+
+    <item
+        android:id="@+id/my_courses"
+        android:icon="@drawable/corce_o"
+        android:title="@string/my_courses"/>
+
+    <item
+        android:id="@+id/categories"
+        android:icon="@drawable/category"
+        android:title="@string/categories"/>
+
+    <item
+        android:id="@+id/wishlist"
+        android:icon="@mipmap/ic_heart"
+        android:title="@string/wishlist" />
+
+
+    <item
+        android:id="@+id/join_live_class"
+        android:icon="@drawable/live_class"
+        android:title="@string/join_live_class" />
+
+
+    <item
+        android:id="@+id/celebrity"
+        android:icon="@drawable/quiz_create"
+        android:title="@string/celebrity" />
+
+    <item
+        android:id="@+id/settings"
+        android:icon="@mipmap/ic_settings"
+        android:title="@string/setting" />
+
+    <item
+        android:id="@+id/signout"
+        android:icon="@mipmap/ic_logout"
+        android:title="@string/sign_out" />
+
+
+</menu>
+

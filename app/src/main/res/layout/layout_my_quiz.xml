@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_quiz"
+        android:weightSum="15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/_15sdp"
+            android:layout_weight="5"
+            android:id="@+id/imgview_my_quiz"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_weight="8"
+            android:layout_width="@dimen/_140sdp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_quiz_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:text="Quiz " />
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_quiz_syllabus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Quiz" />
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_quiz_passmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Quiz " />
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_quiz_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Quiz " />
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_quiz_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Quiz " />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_weight="3"
+            android:id="@+id/imageview_delete_quiz"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/trash"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp" />
+    </LinearLayout>
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/_1sdp"-->
+        <!--android:background="@color/black_55" />-->
+</LinearLayout>

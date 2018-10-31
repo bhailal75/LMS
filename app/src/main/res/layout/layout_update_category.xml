@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/vertical_main_margin">
+
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/horizontal_main_margin"
+        android:layout_marginLeft="@dimen/horizontal_main_margin"
+        >
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/update_category"
+            android:gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"/>
+
+        <ImageView
+            android:layoutDirection="ltr"
+            android:id="@+id/close_dialog"
+            android:layout_margin="@dimen/_4sdp"
+            android:padding="@dimen/_2sdp"
+            android:layout_alignParentRight="true"
+            android:layout_width="@dimen/_16sdp"
+            android:layout_height="@dimen/_16sdp"
+            android:src="@mipmap/ic_close"
+            />
+
+
+    </RelativeLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        >
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/textInput_qtitle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="0.9"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/qtitle_textInputEditText"
+                style="@style/TextAppearance.AppCompat.Small"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:hint="@string/create_cat"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@android:color/black" />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radiogrp_stts"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/active"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/active"/>
+
+        <RadioButton
+            android:id="@+id/deactive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/deactive"/>
+
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/vertical_main_margin"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.25"/>
+
+        <Button
+            android:id="@+id/buttn_save"
+            android:layout_width="0dp"
+            android:layout_weight="0.50"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/update"
+            android:textSize="@dimen/_16sdp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_puple_button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.25"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

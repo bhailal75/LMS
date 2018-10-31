@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/toolbar_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar_myCoures"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:contentInsetStartWithNavigation="0dp"></android.support.v7.widget.Toolbar>
+
+        <com.claudiodegio.msv.MaterialSearchView
+            android:id="@+id/sv"
+            android:textDirection="locale"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="5dip"></com.claudiodegio.msv.MaterialSearchView>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/containier"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar_container">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow" />
+
+    </FrameLayout>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_below="@id/containier"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Student.Activty.MyCourse_Activty">
+
+        <!--<android.support.v7.widget.Toolbar-->
+                <!--android:id="@+id/toolbar_view_course"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/colorPrimary"-->
+                <!--app:contentInsetLeft="0dp"-->
+                <!--app:contentInsetStart="0dp"-->
+                <!--app:contentInsetStartWithNavigation="0dp">-->
+
+                <!--<com.example.bhoomi.lms.Student.Constants.MyMediumText-->
+                    <!--style="@style/Base.TextAppearance.AppCompat.Medium"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="left"-->
+                    <!--android:text="@string/my_course"-->
+                    <!--android:textColor="@android:color/white" />-->
+
+            <!--</android.support.v7.widget.Toolbar>-->
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView_course"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/txt_no_data_found"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/no_data_found"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_15sdp"
+                android:visibility="gone" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:visibility="gone"
+            android:id="@+id/recyclerView_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/containier" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/nvView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/gradient_drawer"
+        app:headerLayout="@layout/nav_header"
+        app:itemIconTint="@android:color/white"
+        app:itemTextAppearance="@android:color/white"
+        app:itemTextColor="@android:color/white"
+        app:menu="@menu/drawer_view" />
+
+</android.support.v4.widget.DrawerLayout>

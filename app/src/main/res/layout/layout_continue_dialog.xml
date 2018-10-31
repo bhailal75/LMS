@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/vertical_main_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        >
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.15"
+            android:src="@drawable/image_logo"/>
+
+        <com.example.bhoomi.lms.Student.Constants.MyBoldText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.32"
+            android:layout_marginLeft="@dimen/horizontal_main_margin"
+            android:text="Intilagah Course"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:layout_width="0dp"
+            android:layout_weight="0.53"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/horizontal_main_margin"
+            android:text="Rs. 650"
+            android:textColor="@color/colorPrimary"
+            android:gravity="right"
+            android:layout_gravity="right"
+            android:id="@+id/mediumTxt_price"
+            style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+    </LinearLayout>
+
+    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/horizontal_main_margin"
+        android:text="Please tap continue to add  a payment method  or add information  to complete  your purchase"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.3"/>
+
+        <Button
+            android:id="@+id/buttn_continue"
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="continue"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_puple_button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.3"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

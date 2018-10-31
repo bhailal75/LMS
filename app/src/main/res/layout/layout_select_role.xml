@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/vertical_main_margin">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="@dimen/horizontal_main_margin"
+        android:layout_marginLeft="@dimen/horizontal_main_margin"
+        android:weightSum="1">
+
+        <com.example.bhoomi.lms.Student.Constants.MyMediumText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Select user role"
+            android:gravity="center_vertical"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@android:color/black"/>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:background="@android:color/darker_gray"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:id="@+id/spinner_select_role"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/vertical_main_margin"
+        android:weightSum="1">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.2"/>
+
+        <Button
+            android:id="@+id/buttn_save"
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/Save"
+            android:textColor="@android:color/white"
+            android:background="@drawable/rounded_green_button"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.2"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

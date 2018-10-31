@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="10dp"
+    android:padding="15dp"
+    android:gravity="left"
+    android:layoutDirection="ltr"
+    android:background="@android:color/transparent">
+
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/lblListHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.9"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:id="@+id/imageView_grpIndicator"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.1"
+        android:src="@drawable/ic_chevron_down_white_18dp"/>
+
+</LinearLayout>

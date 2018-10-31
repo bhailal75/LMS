@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#02b3e4</color>
+    <color name="colorPrimaryDark">#02d1bf</color>
+    <color name="colorAccent">#02b3e4</color>
+
+    <color name="colorFb">#475993</color>
+    <color name="colorgGoogle">#f14336 </color>
+    <color name="colorgPurple">#de93e5 </color>
+    <color name="colorgDarkGray">#727272 </color>
+    <color name="colorgLightGray">#dcd9d9</color>
+    <color name="colorgLightbg">#f1efef</color>
+
+    <color name="colorgAlpha">#c3131313</color>
+    <color name="colorOffwhite">#eeeded</color>
+
+    <color name="colorRating">#edad0c</color>
+
+    <color name="colorgBlue">#3970c9</color>
+    <color name="colorgRed">#FE4F6E</color>
+    <color name="colorgPink">#FE4F6E</color>
+
+    <color name="colorNavBlue">#02b3e4</color>
+    <color name="colorChildNavBlue">#0589ad</color>
+
+    <color name="backgroundScreen">#FEFFEF</color>
+
+    <color name="bg">#EEEDED</color>
+</resources>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/horizontal_main_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/horizontal_main_margin"
+        android:layout_marginEnd="@dimen/horizontal_main_margin">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.95">
+
+            <TextView
+                android:id="@+id/textView_forgotPwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/forogt_password_without_question"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_4sdp"
+                android:layout_marginLeft="@dimen/horizontal_main_margin"
+                style="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:layoutDirection="ltr"
+            android:id="@+id/imageView_close"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.05"
+            android:src="@mipmap/ic_close"/>
+
+    </LinearLayout>
+
+
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.05dp"
+        android:layout_marginTop="@dimen/horizontal_main_margin"
+        android:background="@android:color/darker_gray"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/email_imgVw"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.07"
+            android:src="@mipmap/envelope" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="5dp"
+            android:layout_weight="0.03"
+            />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.9"
+            android:id="@+id/textInput_email">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/email_textInput_forgotPwd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/colorPrimary"
+                style="@style/TextAppearance.AppCompat.Medium"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        />
+
+
+    <Button
+        android:id="@+id/forgotPwd_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_green_button"
+        android:text="@string/send"
+        android:textColor="@android:color/white"
+        android:layout_margin="@dimen/horizontal_main_margin"/>
+
+</LinearLayout>

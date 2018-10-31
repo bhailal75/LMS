@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="@dimen/horizontal_main_margin"
+    android:layout_marginRight="@dimen/horizontal_main_margin"
+   >
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:id="@+id/textView_moretitle"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.95"
+        android:text="1"
+        android:gravity="center_vertical"
+        />
+
+   <ImageView
+       android:layout_width="0dp"
+       android:layout_height="match_parent"
+       android:layout_weight="0.05"
+       android:src="@drawable/ic_back_forward"/>
+
+</LinearLayout>

@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.Activty.CourseView_Activity"
+    android:background="@color/backgroundScreen">
+
+<com.example.bhoomi.lms.Student.Constants.TouchDetectableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    android:focusable="true"
+    android:descendantFocusability="beforeDescendants"
+    android:fillViewport="true"
+    android:id="@+id/scrollView_courseDetail"
+    android:background="@color/backgroundScreen">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Student.Activty.CourseView_Activity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_courseView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:contentInsetStartWithNavigation="0dp"/>
+
+    <FrameLayout
+        android:layout_below="@id/toolbar_courseView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow" />
+    </FrameLayout>
+
+    <ImageView
+        android:layout_below="@+id/toolbar_courseView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/profile_icon"
+        android:scaleType="centerCrop"
+        android:id="@+id/img_back" />
+
+    <ImageView
+        android:layout_below="@+id/toolbar_courseView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:scaleType="fitXY"
+        android:background="@color/colorgAlpha" />
+
+    <com.example.bhoomi.lms.Student.Constants.MyMediumText
+        android:layout_marginTop="@dimen/horizontal_main_margin"
+        android:id="@+id/text_title"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_below="@+id/toolbar_courseView"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Large"
+        android:layout_marginStart="@dimen/horizontal_main_margin"
+        android:layout_marginEnd="@dimen/horizontal_main_margin"
+        android:maxLines="2"
+        android:ellipsize="end" />
+
+    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+        android:id="@+id/text_subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/text_title"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:layout_marginStart="@dimen/horizontal_main_margin"
+        android:layout_marginEnd="@dimen/horizontal_main_margin"
+        android:layout_marginTop="@dimen/horizontal_main_margin"
+        android:maxLines="2" />
+
+    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+        android:id="@+id/text_author"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_below="@+id/text_subtitle"
+        android:textColor="@android:color/white"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:maxLines="2" />
+
+    <FrameLayout
+        android:id="@+id/framimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_author"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@drawable/profile_icon"
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_140sdp" />
+
+        <ImageView
+            android:visibility="gone"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_play_button"
+            android:id="@+id/image_play"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp" />
+
+        <tcking.github.com.giraffeplayer2.VideoView
+            android:id="@+id/video_view"
+            android:visibility="gone"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_140sdp"
+            />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_margin="@dimen/horizontal_main_margin"
+        android:layout_below="@+id/framimg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="@dimen/vertical_main_margin"
+                android:layout_marginRight="@dimen/vertical_main_margin"
+                android:orientation="horizontal"
+                tools:ignore="ExtraText"
+                android:gravity="center_horizontal"
+                android:background="@color/colorPrimaryDark"
+                android:weightSum="1">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"/>
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="0.1"
+                    android:src="@mipmap/ic_rss_white_18dp"/>
+
+                <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                    android:id="@+id/text_courseSubscribe"
+                    android:layout_width="0dp"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_height="match_parent"
+                    android:textColor="@android:color/white"
+                    android:text="@string/subscriber"
+                    android:gravity="center"
+                    android:layout_weight="0.4"
+                    style="@style/Base.TextAppearance.AppCompat.Large"
+                    />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"/>
+            </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:orientation="vertical">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseInclude"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_subtitle"
+                    android:textColor="@android:color/black"
+                    android:text="@string/this_course_includes"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/semi_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin">
+
+                    <LinearLayout
+                        android:id="@+id/img_thumbnail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+                    <LinearLayout
+                        android:id="@+id/this_course_include"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.9"
+                        android:layout_margin="@dimen/semi_margin"
+                        android:layout_marginLeft="@dimen/horizontal_main_margin"
+                        android:layout_marginRight="@dimen/horizontal_main_margin">
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseLearn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_subtitle"
+                    android:textColor="@android:color/black"
+                    android:text="@string/what_will_i_learn"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_margin="@dimen/horizontal_main_margin" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="@dimen/semi_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin">
+
+                    <LinearLayout
+                        android:id="@+id/img_learn_thumbnail"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.05"
+                        android:orientation="vertical">
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+                    <LinearLayout
+                        android:id="@+id/wht_will_learn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="0.9"
+                        android:layout_margin="@dimen/semi_margin"
+                        android:layout_marginLeft="@dimen/horizontal_main_margin"
+                        android:layout_marginRight="@dimen/horizontal_main_margin">
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white">
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_subtitle"
+                    android:textColor="@android:color/black"
+                    android:text="@string/description"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    />
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:visibility="visible"
+                    android:id="@+id/text_coursedesc"
+                    android:layout_width="wrap_content"
+                    android:ellipsize="end"
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:layout_height="wrap_content"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/horizontal_main_margin"
+                android:layout_marginBottom="@dimen/horizontal_main_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseCurriculam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_subtitle"
+                    android:textColor="@color/colorPrimary"
+                    android:text="@string/curriculum"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+
+                    />
+
+
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseCurriculamDetail"
+                    android:layout_width="wrap_content"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorgPurple"
+                    android:layout_marginTop="@dimen/horizontal_main_margin"
+                    android:text=""
+                    style="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <com.example.bhoomi.lms.Student.Constants.NonScrollExpandableListView
+                    android:id="@+id/lvExp"
+                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:groupIndicator="@null"
+                    android:dividerHeight="@null"/>
+            </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:id="@+id/card_viewsection"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/horizontal_main_margin"
+                android:layout_marginBottom="@dimen/horizontal_main_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+               <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_courseSection"
+                    android:layout_width="match_parent"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="15 more sections"
+                    android:gravity="center"
+                    style="@style/Base.TextAppearance.AppCompat.Small" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/horizontal_main_margin"
+                android:layout_marginBottom="@dimen/horizontal_main_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_studentsViewed"
+                    android:focusableInTouchMode="true"
+                    android:layout_width="match_parent"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/students_also_viewed"
+                    style="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_courses"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/horizontal_main_margin">
+
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:id="@+id/text_createdBy"
+                    android:layout_width="match_parent"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="Created by Colt Steele"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/vertical_main_margin"
+                    >
+
+                    <ImageView
+                        android:id="@+id/imageView_thumb"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.35"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/profile_icon"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.65"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/semi_margin"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp"
+                                android:src="@drawable/learn"
+                                />
+
+                            <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                                android:id="@+id/textView_students"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="2"
+                                android:text="252552 students"
+                                android:ellipsize="end"/>
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal">
+
+
+                            <ImageView
+                                android:src="@drawable/book"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp" />
+                            <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                                android:id="@+id/textView_courses"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="4 Courses"
+                                android:ellipsize="end"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_marginBottom="@dimen/_2sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:weightSum="1"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:src="@drawable/star_gry"
+                                style="@style/Widget.AppCompat.RatingBar.Small"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:layout_marginRight="@dimen/_10sdp"
+                                android:layout_width="@dimen/_15sdp"
+                                android:layout_height="@dimen/_15sdp" />
+
+                            <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                                android:id="@+id/textView_courserating"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:maxLines="1"
+                                android:text="4.7 Average Rating"
+                                android:ellipsize="end"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+           </LinearLayout>
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/horizontal_main_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="@dimen/horizontal_main_margin">
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:layout_margin="@dimen/horizontal_main_margin"
+                    android:id="@+id/text_studentFeedback"
+                    android:layout_width="match_parent"
+                    android:ellipsize="end"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/black"
+                    android:text="@string/student_feedback"
+                    style="@style/Base.TextAppearance.AppCompat.Small" />
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_margin="@dimen/horizontal_main_margin">
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                        android:layout_marginLeft="@dimen/horizontal_main_margin"
+                        android:layout_width="wrap_content"
+                        android:ellipsize="end"
+                        android:textSize="@dimen/_20sdp"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        style="@style/Base.TextAppearance.AppCompat.Small"
+                        android:id="@+id/avgRating"/>
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                        android:id="@+id/text_ratingVal"
+                        android:text="@string/average_rating"
+                        android:textSize="@dimen/_12sdp"
+                        android:textColor="@color/black_55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/Base.TextAppearance.AppCompat.Large" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"                    >
+
+                    <com.philjay.valuebar.ValueBar
+                        android:id="@+id/valueBar1"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"  >
+
+                        <RatingBar
+                            android:id="@+id/avgRating1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="0.5"
+                            android:numStars="5"
+                            android:rating="5"
+                            android:layout_gravity="right"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+
+
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+
+                        android:id="@+id/ratingPercent5"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"                    >
+
+                    <com.philjay.valuebar.ValueBar
+                        android:id="@+id/valueBar2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"                        >
+
+                        <RatingBar
+                            android:id="@+id/avgRating2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="0.5"
+                            android:numStars="5"
+                            android:rating="4"
+                            android:layout_gravity="right"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+
+
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+
+                        android:id="@+id/ratingPercent4"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+                    >
+
+                    <com.philjay.valuebar.ValueBar
+                        android:id="@+id/valueBar3"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"                        >
+
+                        <RatingBar
+                            android:id="@+id/avgRating3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="0.5"
+                            android:numStars="5"
+                            android:rating="3"
+                            android:layout_gravity="right"
+                            android:gravity="right"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+
+                        android:id="@+id/ratingPercent3"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"                    >
+
+                    <com.philjay.valuebar.ValueBar
+                        android:id="@+id/valueBar4"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"                        >
+
+                        <RatingBar
+                            android:id="@+id/avgRating4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="0.5"
+                            android:numStars="5"
+                            android:rating="2"
+                            android:layout_gravity="right"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+
+
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+
+                        android:id="@+id/ratingPercent2"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+
+                    >
+
+                    <com.philjay.valuebar.ValueBar
+                        android:id="@+id/valueBar5"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.35"
+                        android:orientation="vertical"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        >
+
+                        <RatingBar
+                            android:id="@+id/avgRating5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:stepSize="0.5"
+                            android:numStars="5"
+                            android:rating="1"
+                            android:layout_gravity="right"
+                            android:theme="@style/RatingBar"
+                            style="@style/Widget.AppCompat.RatingBar.Small"/>
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_height="5dp"
+                        android:layout_weight="0.05"/>
+
+
+
+
+                    <com.example.bhoomi.lms.Student.Constants.MyRegularText
+
+                        android:id="@+id/ratingPercent1"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.2"
+                        android:layout_height="wrap_content"
+                        android:text="100%"
+                        android:layout_gravity="center"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:id="@+id/card_reviews"
+            android:background="@android:color/white">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/horizontal_main_margin"
+                android:layout_marginBottom="@dimen/horizontal_main_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView_comments"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="2dp"
+            android:layout_marginTop="@dimen/horizontal_main_margin"
+            android:background="@android:color/white"
+            android:id="@+id/see_Reviews">
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/horizontal_main_margin"
+                android:layout_marginBottom="@dimen/horizontal_main_margin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+
+
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/text_reviewSection"
+                    android:layout_width="match_parent"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:layout_marginRight="@dimen/horizontal_main_margin"
+                    android:layout_marginLeft="@dimen/horizontal_main_margin"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    android:text="See all reviews"
+                    android:gravity="center"
+                    style="@style/Base.TextAppearance.AppCompat.Small"
+                    />
+
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+</com.example.bhoomi.lms.Student.Constants.TouchDetectableScrollView>
+
+    <FrameLayout
+        android:id="@+id/frame_pricing"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:id="@+id/ll_price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center">
+
+                <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                    android:id="@+id/button_new_rs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorgPurple"
+                    android:textColor="@android:color/white"
+                    android:text="Rs. 650"
+                    android:gravity="center|bottom"
+                    style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+                <com.example.bhoomi.lms.Student.Constants.MyRegularText
+                    android:id="@+id/button_old_rs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@color/colorgPurple"
+                    android:textColor="@android:color/white"
+                    android:text="Rs. 650"
+                    android:gravity="top|center"
+                    style="@style/Base.TextAppearance.AppCompat.Small"/>
+
+
+            </LinearLayout>
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/textView_buynow"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="Buy now"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/frame_free"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_free"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorgPurple"
+                android:textColor="@android:color/white"
+                android:text="@string/free"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+            <com.example.bhoomi.lms.Student.Constants.MyMediumText
+                android:id="@+id/text_enroll"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:text="@string/enroll"
+                android:gravity="center"
+                style="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</RelativeLayout>
